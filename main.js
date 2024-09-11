@@ -1,5 +1,8 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
+const startButton = document.querySelector(".start");
+const gaveOverScream = document.querySelector(".game-over");
+let gameStart = false;
 const jump = () => {
     mario.classList.add("jump");
     setTimeout(() => {
