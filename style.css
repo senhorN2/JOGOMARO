@@ -71,7 +71,7 @@ display: block;
     height: 100vh;
     background: red;
     display: none;
-    align-item: center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     position: fixed;

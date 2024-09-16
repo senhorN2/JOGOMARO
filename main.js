@@ -1,5 +1,6 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
+const nuvem = document.querySelector(".nuvem");
 const startButton = document.querySelector(".start");
 const gaveOverScream = document.querySelector(".game-over");
 let gameStart = false;
@@ -21,8 +22,14 @@ const jump = () => {
             mario.src = "./img/game-over.png";
             mario.style.width = "75px";
             mario.style.marginLeft = "50px";
+            audioStart.pause();
+            gameOverSound.play();
             clearInvertaval(loop);
+            gameOverScreen.style.display = "flex"
         }
     },10);
 document.addEventListener("keydown",jump);
+const restartGame = () => {
+    window.location.reload();
+}
  
