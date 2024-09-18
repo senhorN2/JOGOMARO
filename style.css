@@ -118,16 +118,16 @@ display: block;
         bottom: 0px;
     }
 
-    40% {
-        bottom: 180px;
+    25% {
+        bottom: -360px;
     }
 
     50% {
         bottom: 360px;
     }
 
-    60% {
-        bottom: 540px;
+    75% {
+        bottom: -360px;
     }
 
     100% {
