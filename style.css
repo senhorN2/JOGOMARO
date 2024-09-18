@@ -115,23 +115,23 @@ display: block;
 
 @keyframes jump {
     0% {
-        bottom: 180px;
+        bottom: 0px;
     }
 
-    25% {
-        bottom: 0px;
+    40% {
+        bottom: 180px;
     }
 
     50% {
         bottom: 180px;
     }
 
-    75% {
-        bottom: 0px;
+    60% {
+        bottom: 180px;
     }
 
     100% {
-        bottom: 180px;
+        bottom: 0px;
     }
 }
 
