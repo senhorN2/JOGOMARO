@@ -28,12 +28,13 @@
 
 .mario {
   width: 15px;
+  height: 150px
   position: absolute;
   bottom: 0;
 }
 
 .jump {
- animation: jump 100000ms ease-out;
+ animation: jump 500ms ease-out;
 }
 
 .nuvem {
@@ -115,23 +116,23 @@ display: block;
 
 @keyframes jump {
     0% {
-        bottom: 180px;
+        bottom: 1080px;
     }
 
     25% {
-        bottom: 180px;
+        bottom: 1080px;
     }
 
     50% {
-        bottom: 180px;
+        bottom: 1080px;
     }
 
-    75% {
-        bottom: 180px;
+    99% {
+        bottom: 1080px;
     }
 
     100% {
-        bottom: 180px;
+        bottom: 0px;
     }
 }
 
