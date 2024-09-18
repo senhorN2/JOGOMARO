@@ -61,6 +61,7 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
     gameOverScreen.style.display = "flex";
   } else if (pipePosition < 0 && gameStarted) {
     updatedScore();
+    pipe.style.left ='';
   }
 },10);
 
