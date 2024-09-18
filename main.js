@@ -9,6 +9,7 @@ audioStart = new Audio("./sound/audio_theme.mp3");
 const gameOverSound = new Audio("./sound/audio_gameover.mp3");
 
 let gameStarted = false;
+let score = 0;
 
 const startGame = () => {
   gameStarted = true;

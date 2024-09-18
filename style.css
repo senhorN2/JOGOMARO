@@ -23,7 +23,7 @@
  position: absolute;
  bottom: 0;
  width: 80px;
- 
+
 }
 
 .mario {
@@ -33,7 +33,7 @@
 }
 
 .jump {
- animation: jump 500ms ease-out;
+ animation: jump 5000ms ease-out;
 }
 
 .nuvem {
