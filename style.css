@@ -123,11 +123,11 @@ display: block;
     }
 
     50% {
-        bottom: 180px;
+        bottom: 360px;
     }
 
     60% {
-        bottom: 180px;
+        bottom: 540px;
     }
 
     100% {
