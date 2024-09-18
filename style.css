@@ -33,7 +33,7 @@
 }
 
 .jump {
- animation: jump 5000000000ms ease-out;
+ animation: jump 500ms ease-out;
 }
 
 .nuvem {
@@ -115,23 +115,23 @@ display: block;
 
 @keyframes jump {
     0% {
-        bottom: 0;
-    }
-
-    40% {
         bottom: 180px;
     }
 
+    40% {
+        bottom: 0px;
+    }
+
     50% {
-        bottom: 1800px;
+        bottom: 180px;
     }
 
     60% {
-        bottom: 18000px;
+        bottom: 0px;
     }
 
     100% {
-        bottom: 0;
+        bottom: 180px;
     }
 }
 
