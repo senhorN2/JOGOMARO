@@ -35,13 +35,6 @@ const jump = () => {
     }
 }
 
-const loopUpdScore = () => {
-    score += 1;
-    scoreElement.textContent = score;
-    const animationSpeed = 1.5/ (1 + score/ 500);
-    pipe.style.animation = `pipe-animation ${animationSpeed}s infinite linear`;
-}
-
 const updateScore = () => {
     score += 10;
     scoreElement.textContent = score;
@@ -70,7 +63,7 @@ const updateScore = () => {
 
             clearInterval(loop);
             gameOverScreen.style.display = "flex";
-    }         else if(pipePosition < 0 && gameStarted) {
+    }         else if (pipePosition < 0 && gameStarted) {
               updateScore();
               pipe.style.left = '';
             }
