@@ -14,7 +14,6 @@ let score = 0;
 
 const startGame = () => {
     gameStarted = true;
-    score += 1;
     audioStart.play();
 
     pipe.style.animation = "pipe-animation 1.5s infinite linear";
@@ -64,7 +63,7 @@ const updateScore = () => {
 
             clearInterval(loop);
             gameOverScreen.style.display = "flex";
-    }         else if (pipePosition < 0 && gameStarted) {
+    }         else (pipePosition < 0 && gameStarted) {
               updateScore();
               pipe.style.left = '';
             }
