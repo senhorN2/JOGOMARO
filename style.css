@@ -12,7 +12,7 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(#ff0000,#ff5100, #eeff00, #00ff15, #0004ff, #ae00ff);
+    background: linear(#87CEEB);
 }
 
 .pipe, .mario, .nuvem {
