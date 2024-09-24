@@ -1,8 +1,9 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
-    }
+    box-sizing: border-box;
+}
 
 .game-board {
     width: 100%;
@@ -11,7 +12,7 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(#87ceeb,#e0f6ff );
+    background: linear-gradient(#ff0000,#ff5100, #eeff00, #00ff15, #0004ff, #ae00ff);
 }
 
 .pipe, .mario, .nuvem {
@@ -20,27 +21,25 @@
 }
 
 .pipe {
- position: absolute;
- bottom: 0;
- width: 80px;
-
+    position: absolute;
+    bottom: 0;
+    width: 200px;
 }
 
 .mario {
-  width: 15px;
-  height: 15px
-  position: absolute;
-  bottom: 0;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
 }
 
 .jump {
- animation: jump 500ms ease-out;
+    animation: jump 500ms ease-out;
 }
 
 .nuvem {
-  position: absolute;
-  width: 550px;
-  animation: clouds-animation 20s infinite linear;
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 20s infinite linear;
 }
 
 button {
@@ -64,7 +63,7 @@ button:hover {
 }
 
 button.start {
-display: block;
+    display: block;
 }
 
 .score {
@@ -76,7 +75,7 @@ display: block;
     font-size: 24px;
     padding: 10px;
     border-radius: 8px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'arial', sans-serif;
 }
 
 .score span {
@@ -87,7 +86,7 @@ display: block;
 .game-over {
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.2);
+    background:rgba(0, 0, 0, 0.2);
     display: none;
     align-items: center;
     justify-content: center;
@@ -104,35 +103,35 @@ display: block;
     margin-top: 15rem;
 }
 
-@keyframes pipe-animation{
+
+@keyframes pipe-animation {
     from {
         right: -80px;
     }
-    
     to {
         right: 100%;
     }
-}  
+}
 
 @keyframes jump {
     0% {
-        bottom: 1080px;
+        bottom: 0;
     }
 
-    25% {
-        bottom: 1080px;
+    40% {
+        bottom: 180px;
     }
 
     50% {
-        bottom: 1080px;
+        bottom: 180px;
     }
 
-    99% {
-        bottom: 1080px;
+    60% {
+        bottom: 180px;
     }
 
     100% {
-        bottom: 0px;
+        bottom: 0;
     }
 }
 
