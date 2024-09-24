@@ -11,6 +11,7 @@ const gameOverSound = new Audio("./sound/audio_gameover.mp3");
 
 let gameStarted = false;
 let score = 0;
+score += 1;
 
 const startGame = () => {
     gameStarted = true;
@@ -36,7 +37,7 @@ const jump = () => {
 }
 
 const updateScore = () => {
-    score += 24;
+    score += 10;
     scoreElement.textContent = score;
     const animationSpeed = 1.5/ (1 + score/ 500);
     pipe.style.animation = `pipe-animation ${animationSpeed}s infinite linear`;
