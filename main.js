@@ -63,7 +63,7 @@ const updateScore = () => {
 
             clearInterval(loop);
             gameOverScreen.style.display = "flex";
-    }         else (pipePosition < 0 && gameStarted) {
+    }         else if (pipePosition < 0 && gameStarted) {
               updateScore();
               pipe.style.left = '';
             }
