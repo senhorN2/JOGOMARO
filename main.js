@@ -11,10 +11,10 @@ const gameOverSound = new Audio("./sound/audio_gameover.mp3");
 
 let gameStarted = false;
 let score = 0;
-score += 1;
 
 const startGame = () => {
     gameStarted = true;
+    score += 1;
     audioStart.play();
 
     pipe.style.animation = "pipe-animation 1.5s infinite linear";
